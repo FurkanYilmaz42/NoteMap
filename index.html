@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Note Map</title>
+    <!-- ! css link -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- ! leaflet css -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <!-- ! Bs Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <!-- Map -->
+    <div id="map"></div>
+
+    <!-- Aside -->
+    <aside>
+      <!-- Header -->
+      <header>
+        <h1 class="aside-title">Notlar</h1>
+        <i id="arrow" class="bi bi-chevron-down"></i>
+      </header>
+
+      <!-- Form -->
+      <form>
+        <!-- Field title -->
+        <div class="field">
+          <label for="title">Baslik</label>
+          <input type="text" id="title" />
+        </div>
+
+        <!-- Field title -->
+        <div class="field">
+          <label for="date">Tarih</label>
+          <input type="date" id="date" />
+        </div>
+
+        <!-- Field title -->
+        <div class="field">
+          <label for="status">Durum</label>
+          <select id="status">
+            <option value="">Seciniz</option>
+            <option value="">Ziyaret</option>
+            <option value="">Park Yeri</option>
+            <option value="">Ev</option>
+            <option value="">Is Yeri</option>
+          </select>
+        </div>
+
+        <div class="buttons">
+          <button type="cancel">Iptal</button>
+          <button type="submit">Ekle</button>
+        </div>
+      </form>
+
+      <!-- List -->
+       <ul>
+        <!-- Note List -->
+        <li>
+            <div>
+                <h3>Title</h3>
+                <p>Date</p>
+                <p class="status">Status</p>
+            </div>
+            <div class="icons">
+                <i id="fly-btn"><i class="bi bi-airplane-fill"></i></i>
+                <i id="delete-btn"><i class="bi bi-trash"></i></i>
+            </div>
+        </li>
+
+        <!-- Note List -->
+        <li>
+            <div>
+                <h3>Title</h3>
+                <p>Date</p>
+                <p class="status">Status</p>
+            </div>
+            <div class="icons">
+                <i id="fly-btn"><i class="bi bi-airplane-fill"></i></i>
+                <i id="delete-btn"><i class="bi bi-trash"></i></i>
+            </div>
+        </li>
+
+        <!-- Note List -->
+        <li>
+            <div>
+                <h3>Title</h3>
+                <p>Date</p>
+                <p class="status">Status</p>
+            </div>
+            <div class="icons">
+                <i id="fly-btn"><i class="bi bi-airplane-fill"></i></i>
+                <i id="delete-btn"><i class="bi bi-trash"></i></i>
+            </div>
+        </li>
+
+        <!-- Note List -->
+        <li>
+            <div>
+                <h3>Title</h3>
+                <p>Date</p>
+                <p class="status">Status</p>
+            </div>
+            <div class="icons">
+                <i id="fly-btn"><i class="bi bi-airplane-fill"></i></i>
+                <i id="delete-btn"><i class="bi bi-trash"></i></i>
+            </div>
+        </li>
+
+        <!-- Note List -->
+        <li>
+            <div>
+                <h3>Title</h3>
+                <p>Date</p>
+                <p class="status">Status</p>
+            </div>
+            <div class="icons">
+                <i id="fly-btn"><i class="bi bi-airplane-fill"></i></i>
+                <i id="delete-btn"><i class="bi bi-trash"></i></i>
+            </div>
+        </li>
+       </ul>
+    </aside>
+
+    <!-- ! leaflet js connection -->
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <!-- ! Main js connection -->
+    <script src="./js/main.js" type="module"></script>
+  </body>
+</html>
