@@ -6,5 +6,4 @@ const uiElement = {
   asideTitle: document.querySelector(".aside-title"),
   asideArrow: document.querySelector("#arrow"),
 };
-
 export default uiElement;
