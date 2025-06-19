@@ -39,96 +39,32 @@
           <input type="text" id="title" />
         </div>
 
-        <!-- Field title -->
+        <!-- Field date -->
         <div class="field">
           <label for="date">Tarih</label>
           <input type="date" id="date" />
         </div>
 
-        <!-- Field title -->
+        <!-- Field status -->
         <div class="field">
           <label for="status">Durum</label>
           <select id="status">
-            <option value="">Seciniz</option>
-            <option value="">Ziyaret</option>
-            <option value="">Park Yeri</option>
-            <option value="">Ev</option>
-            <option value="">Is Yeri</option>
+            <option disabled selected value="">Seciniz</option>
+            <option value="goto">Ziyaret</option>
+            <option value="park">Park Yeri</option>
+            <option value="home">Ev</option>
+            <option value="job">Is Yeri</option>
           </select>
         </div>
 
         <div class="buttons">
-          <button type="cancel">Iptal</button>
+          <button id="cancel-btn" type="cancel">Iptal</button>
           <button type="submit">Ekle</button>
         </div>
       </form>
 
       <!-- List -->
-       <ul>
-        <!-- Note List -->
-        <li>
-            <div>
-                <h3>Title</h3>
-                <p>Date</p>
-                <p class="status">Status</p>
-            </div>
-            <div class="icons">
-                <i id="fly-btn"><i class="bi bi-airplane-fill"></i></i>
-                <i id="delete-btn"><i class="bi bi-trash"></i></i>
-            </div>
-        </li>
-
-        <!-- Note List -->
-        <li>
-            <div>
-                <h3>Title</h3>
-                <p>Date</p>
-                <p class="status">Status</p>
-            </div>
-            <div class="icons">
-                <i id="fly-btn"><i class="bi bi-airplane-fill"></i></i>
-                <i id="delete-btn"><i class="bi bi-trash"></i></i>
-            </div>
-        </li>
-
-        <!-- Note List -->
-        <li>
-            <div>
-                <h3>Title</h3>
-                <p>Date</p>
-                <p class="status">Status</p>
-            </div>
-            <div class="icons">
-                <i id="fly-btn"><i class="bi bi-airplane-fill"></i></i>
-                <i id="delete-btn"><i class="bi bi-trash"></i></i>
-            </div>
-        </li>
-
-        <!-- Note List -->
-        <li>
-            <div>
-                <h3>Title</h3>
-                <p>Date</p>
-                <p class="status">Status</p>
-            </div>
-            <div class="icons">
-                <i id="fly-btn"><i class="bi bi-airplane-fill"></i></i>
-                <i id="delete-btn"><i class="bi bi-trash"></i></i>
-            </div>
-        </li>
-
-        <!-- Note List -->
-        <li>
-            <div>
-                <h3>Title</h3>
-                <p>Date</p>
-                <p class="status">Status</p>
-            </div>
-            <div class="icons">
-                <i id="fly-btn"><i class="bi bi-airplane-fill"></i></i>
-                <i id="delete-btn"><i class="bi bi-trash"></i></i>
-            </div>
-        </li>
+       <ul id="note-list">
        </ul>
     </aside>
 

@@ -184,5 +184,26 @@ aside ul li .icons #delete-btn:hover {
     display: none;
 }
 
+aside #arrow {
+  transform: transform 2s ease;
+  font-size: 20px;
+  cursor: pointer;
+}
+
 /* Hide mode */
 
+.hide {
+  height: 90px;
+}
+.hide #arrow {
+  animation: rotateArrow linear 0.6s;
+}
+
+@keyframes rotateArrow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
